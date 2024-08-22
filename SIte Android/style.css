@@ -154,6 +154,7 @@ main > article > picture >img{
     max-width: 90vw;
 }
 aside{
+    width: 95%;
     background-color: var(--cor1);
     margin-top: 10px;
     border-radius: 25px;
