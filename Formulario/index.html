@@ -4,43 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        .l1{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h1>Teste de Formulário</h1>
-        <form action="cadastro.php" autocomplete="on" method="get">
-            <p>
-                <label for="nome">Nome:</label>
-                <input type="text" name="#" id="nome" required size="15" placeholder="Digite seu nome">
-            </p>
-            <p>
-                <label for="email">Email:</label>
-                <input type="text" name="#" id="email" required size="15" placeholder="Digite seu email">
-            </p>
-            <p>
-                <label for="numero">Número</label>
-                <input type="number" name="#" id="numero" min="2" max="10" step="0.5">
-            </p>
-            <p>
-                <label for="periodo">Mês</label>
-                <input type="month" name="#" id="periodo" value="2024-08">
-            </p>
-            <p>
-                <label for="data">Data </label>
-                <input type="date" name="" id="data" value="2024-08-23">
-            </p>
-            <p>
-                <label for="hora">Hora: </label>
-                <input type="time" name="#" id="hora" value="12:03">
-            </p>
-            <p>
-                <label for="senha">Senha:</label>
-                <input type="password" name="#" id="senha" required size="15" minlength="5" placeholder="Digite sua senha">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
+        <h1 class="l1">Exemplo de Formulário</h1>
+        <form class="l1" action="cadastro.php" method="get" autocomplete="on">
+            <fieldset> 
+                <legend>Select, Datalist e Textarea</legend>
+                <p>
+                    <label for="est">Estados: </label>
+                    <select name="#" id="est">
+                        <option value="" selected>--- Escolha ---</option>
+                        <optgroup label="Primeiras Regiões">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="df">Distrito Federal</option>
+                        </optgroup>
+                        <optgroup label="Outras Regiões">
+                            <option value="ma">Maranhão</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="list">Lista de profissões</label>
+                    <input type="text" name="#" id="list" list="listprof">
+                    <datalist id="listprof">
+                    <option value="adm">Administrador</option>
+                    <option value="prof">Professor</option>
+                    <option value="dr">Doutor</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="textarea"> Area de texto</label> <br>
+                    <textarea name="#" cols="30" rows="10" id="textarea">Digite seu texto</textarea>
+                </p>
+                    
+            </fieldset>
+        </form>
+
+        <h1 class="l1">Exemplo de Formulário</h1>
+        <form class="l1" action="get">
+            <fieldset>
+                <legend>Cores</legend>
+                <p>
+                    <label for="cor">Cor: </label>
+                    <input type="color" name="#" id="cor" value="#ffffff">
+                </p>
+                <p>
+                    <label for="nivel">Nível de satisfação: </label>
+                    <input type="range" name="#" id="nivel" value="8" min="1" max="10">
+                </p>
+                <p>
+                    <label for="foto">Foto de perfil: </label>
+                    <input type="file" name="#" id="foto">
+                </p>
+            </fieldset>
+        </form>
+        <h1 class="l1">Exemplo de Formulário</h1>
+        <form class="l1" action="cadastro.php" autocomplete="on" method="post">
+            <fieldset>
+                <legend>Checkbox</legend>
+                <input type="checkbox" name="#" id="futebol"><label for="futebol">futebol</label> <br>
+                <input type="checkbox" name="#" id="basquete"><label for="basquete">basquete</label> <br>
+                <input type="checkbox" name="#" id="volei"><label for="volei">volei</label> <br>
+                <input type="checkbox" name="#" id="natacao"><label for="natacao">natação</label> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Radio</legend>
+                <p>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="#" id="masc">
+                </p>
+                <p>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="#" id="fem">
+                </p>
+            </fieldset>
+        </form>
+
+        <h1 class="l1">Teste de Formulário</h1>
+        <form class="l1" action="cadastro.php" autocomplete="on" method="get">
+            <fieldset>
+                <legend>Agrupamento de campos</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="#" id="nome" required size="15" placeholder="Digite seu nome">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="#" id="email" required size="15" placeholder="Digite seu email" autocomplete="email">
+                </p>
+                <p>
+                    <label for="numero">Número</label>
+                    <input type="number" name="#" id="numero" min="2" max="10" step="0.5">
+                </p>
+                <p>
+                    <label for="periodo">Mês</label>
+                    <input type="month" name="#" id="periodo" value="2024-08">
+                </p>
+                <p>
+                    <label for="data">Data </label>
+                    <input type="date" name="" id="data" value="2024-08-23">
+                </p>
+                <p>
+                    <label for="hora">Hora: </label>
+                    <input type="time" name="#" id="hora" value="12:03">
+                </p>
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="#" id="senha" required size="15" minlength="5" placeholder="Digite sua senha">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
         </form>
     </main>
 </body>
