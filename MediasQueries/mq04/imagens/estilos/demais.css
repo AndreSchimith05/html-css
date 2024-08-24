@@ -1,0 +1,44 @@
+@charset "utc-8";
+
+@media print {
+    body{
+        background: url(../back-print.jpg);
+        .cel{display: none;}
+        .tablet{display: none;}
+        .print{display: block;}
+        .desktop{display: none;}
+        .tv{display: none;}
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background: url(../back-tablet.jpg);
+        .cel{display: none;}
+        .tablet{display: block;}
+        .print{display: none;}
+        .desktop{display: none;}
+        .tv{display: none;}
+    }    
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+        background: url(../back-pc.jpg);
+        .cel{display: none;}
+        .tablet{display: none;}
+        .print{display: none;}
+        .desktop{display: block;}
+        .tv{display: none;}
+    } 
+}
+@media screen and (min-width:1200px){
+    body{
+        background: url(../back-tv.jpg);
+        .cel{display: none;}
+        .tablet{display: none;}
+        .print{display: none;}
+        .desktop{display: none;}
+        .tv{display: block;}
+    }
+    
+}
