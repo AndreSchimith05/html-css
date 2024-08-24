@@ -1,0 +1,17 @@
+@charset "UTC-8";
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+header{
+    display: none;
+}
+main > p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article::after{
+    content: 'Esse artigo foi baixado do site pages do Github.';
+}

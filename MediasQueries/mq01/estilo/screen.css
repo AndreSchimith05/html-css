@@ -1,0 +1,16 @@
+@charset "UTC-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+main > article {
+    width: 600px;
+}
