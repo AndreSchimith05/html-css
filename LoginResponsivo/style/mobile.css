@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #5f2c82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 250px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+}
+
+section > .bg{
+    height: 210px;
+    border-radius: 20px 20px 0px 0px;
+    background: purple url(../image/imagem-bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+section > form{
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+section > form >h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+section > form > p{
+    padding-bottom: 5px;
+    font-size: 0.8em;
+}
+section > form > .campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #5f2c82;
+    border-radius: 5px;
+}
+section > form > div > #person{
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+section > form > div > #key{
+    padding: 8px;
+    color: white;
+}
+section > form > .campo > input{
+    width: 100%;
+    background-color: #94cfcd;
+    border-radius: 8px;
+    border-color: none;
+    padding: 10px;
+}
+section > form > .botao > input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+section > form > #entrar >input{
+    background-color: #41a09d;
+    color: white;
+    font-size: 1em;
+}
+section > form > #entrar > input:hover{
+    background-color: #2d6462;
+}
+section > form > #esqueci{
+    margin-bottom: 10px;
+}
+section > form > #esqueci >input{
+    border: 1px solid #6dd4d0;
+    color: #2d6462;
+    font-size: 1em;
+}
+section > form > #esqueci >input:hover{
+    background-color: #6dd4d0;
+}
