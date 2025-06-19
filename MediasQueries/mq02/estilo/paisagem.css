@@ -1,9 +1,0 @@
-@charset "utc-8";
-
-/*Configurações deitado*/
-
-body{
-    background: url(../imagens/cev-landscape.jpg) no-repeat;
-    background-color: #233eff;
-    background-position: left bottom;
-}
